@@ -1,0 +1,75 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container-fluid {
+  background-color: lightblue;
+}
+
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border: 1px solid; */
+  border-radius: 0.3rem;
+  background: #5d89c7;
+  display: grid;
+  gap: 10px;
+}
+
+.row {
+  background: #edf5fc;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.item {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: black;
+  border: 1px solid;
+  border-radius: 8px;
+  height: 275px;
+}
+
+.frontpage,
+.my-intro,
+.skills,
+.project {
+  height: 300px;
+  border-bottom: 2px solid black;
+}
+
+.frontpage {
+  
+}
+
+.footer {
+  height: 50px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-provided {
+  display: none;
+}
+
+/* 470px 밑으로 가면, not-provided 얘만 보이도록 설정 */
+@media (max-width: 470px) {
+  main, section, nav, footer {
+    display: none;
+  }
+  .not-provided {
+    display: block;
+  }
+}
